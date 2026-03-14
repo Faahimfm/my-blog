@@ -1,9 +1,4 @@
 ---
-// src/pages/articles/[slug].astro
-// ─────────────────────────────────
-// Generates one page per .md file automatically.
-// You never need to touch this file — just write .md articles.
-
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
@@ -27,7 +22,7 @@ function formatDate(dateStr: string) {
 
 <BaseLayout title={`${title} — Faahim`} description={description}>
   <main class="article-page page-enter">
-    <a href="/articles" class="article-back">
+    <a href="/my-blog/articles" class="article-back">
       ← Back to Articles
     </a>
     <p class="article-meta">{formatDate(date)}</p>
