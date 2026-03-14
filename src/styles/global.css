@@ -24,8 +24,6 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   line-height: 1.6;
-  display: flex;
-  flex-direction: column;
 }
 
 p { text-align: justify; }
@@ -137,7 +135,6 @@ h2 {
   max-width: 860px;
   margin: 0 auto;
   padding: calc(var(--nav-height) + 3.5rem) 5% 6rem;
-  flex: 1;
 }
 .inner-page--wide {
   max-width: 1100px;
@@ -152,7 +149,6 @@ h2 {
   text-align: center;
   min-height: 100vh;
   padding: var(--nav-height) 5% 4rem;
-  flex: 1;
 }
 .hero-subtitle {
   font-size: 1.15rem;
@@ -330,7 +326,6 @@ h2 {
   text-align: center;
   min-height: 100vh;
   padding: var(--nav-height) 5% 4rem;
-  flex: 1;
 }
 .contact-page h2 {
   border-bottom: none;
@@ -374,7 +369,6 @@ h2 {
   max-width: 700px;
   margin: 0 auto;
   padding: calc(var(--nav-height) + 3rem) 5% 6rem;
-  flex: 1;
 }
 .article-page .article-meta {
   font-size: 0.8rem;
@@ -426,7 +420,6 @@ h2 {
 
 /* ── FOOTER ── */
 footer {
-  margin-top: auto;
   text-align: center;
   padding: 2rem 5%;
   color: var(--text-muted);
