@@ -1,0 +1,69 @@
+---
+// src/pages/journey.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// ─────────────────────────────────────────────────────
+// EDIT YOUR TIMELINE HERE
+// Each entry: { year, title, description, now?: true }
+// ─────────────────────────────────────────────────────
+const timeline = [
+  {
+    year: "2018",
+    title: "The First Line of Code",
+    description: "It started with a blinking cursor in a college dorm room. HTML, CSS, and a relentless urge to make things appear on screen. No frameworks, no tutorials — just curiosity and a browser's inspect tool pointing the way.",
+  },
+  {
+    year: "2019",
+    title: "Going Deeper — JavaScript & Beyond",
+    description: "Discovered JavaScript and immediately fell down the rabbit hole. Built small projects, broke them, fixed them. Learned that debugging is just as important as building. First open-source contribution shipped.",
+  },
+  {
+    year: "2020",
+    title: "First Real Job — Junior Developer",
+    description: "Joined a startup as a junior frontend developer. The codebase was a maze; the team was brilliant. Shipping to real users for the first time was terrifying and exhilarating in equal measure.",
+  },
+  {
+    year: "2021",
+    title: "Growing into Systems Thinking",
+    description: "Moved from writing components to thinking about architecture. Started caring deeply about performance, accessibility, and maintainability — not just what works, but what lasts and what scales.",
+  },
+  {
+    year: "2022",
+    title: "Senior Engineer & First Mentorship",
+    description: "Promoted to senior engineer. Began mentoring junior developers — which turned out to be one of the most clarifying things for my own understanding. Teaching forces you to find the words for things you only knew by feel.",
+  },
+  {
+    year: "2023",
+    title: "Starting to Write — This Blog",
+    description: "Launched this blog as a way to document what I learn and share it with others walking a similar path. Writing is thinking made visible. Still figuring out what I have to say — and that's the point.",
+  },
+  {
+    year: "Now",
+    title: "Still Building. Still Learning.",
+    description: "The road keeps going. Every project reveals something new, every problem is a little different from the last. The tools change; the curiosity doesn't. If you're somewhere on your own journey, I hope something here is useful to you.",
+    now: true,
+  },
+];
+---
+
+<BaseLayout title="Journey — Faahim">
+  <main class="inner-page page-enter">
+    <h2>The Journey</h2>
+    <div class="timeline">
+      {timeline.map(item => (
+        <div class={`timeline-item${item.now ? ' now' : ''}`}>
+          <div class="timeline-year">{item.year}</div>
+          <div class="timeline-title">{item.title}</div>
+          <p class="timeline-desc">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  // Staggered timeline entry animation
+  document.querySelectorAll('.timeline-item').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 100 + i * 105);
+  });
+</script>

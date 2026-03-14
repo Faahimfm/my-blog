@@ -1,0 +1,74 @@
+---
+// src/layouts/BaseLayout.astro
+// ─────────────────────────────
+// Wraps every page. Pass `title` prop to set the <title> tag.
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Faahim — Blog",
+  description = "Software engineer and writer sharing thoughts on coding, design, and tech.",
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="/" class="logo">Faahim</a>
+    <ul class="nav-links" role="list">
+      <li>
+        <a href="/" class="nav-link" aria-current={currentPath === "/" ? "page" : undefined}>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/articles" class="nav-link" aria-current={currentPath.startsWith("/articles") ? "page" : undefined}>
+          Articles
+        </a>
+      </li>
+      <li>
+        <a href="/journey" class="nav-link" aria-current={currentPath === "/journey" ? "page" : undefined}>
+          Journey
+        </a>
+      </li>
+      <li>
+        <a href="/contact" class="nav-link" aria-current={currentPath === "/contact" ? "page" : undefined}>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <slot />
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; {new Date().getFullYear()} Faahim. All rights reserved.</p>
+  </footer>
+
+  <!-- BACKGROUND LAYERS -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-dots" aria-hidden="true"></div>
+
+</body>
+</html>

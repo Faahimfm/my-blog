@@ -1,62 +1,80 @@
-# Astro Starter Kit: Blog
+# Faahim Blog — Astro Project
 
-```sh
-npm create astro@latest -- --template blog
+## Getting Started
+
+```bash
+npm install
+npm run dev      # start dev server at localhost:4321
+npm run build    # build for production
+npm run preview  # preview production build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-Features:
+## How to Write a New Article
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+1. Create a new file in `src/content/articles/`
+2. Name it anything — e.g. `my-new-post.md`
+3. Add frontmatter at the top, then write in Markdown
 
-## 🚀 Project Structure
+**Template:**
 
-Inside of your Astro project, you'll see the following folders and files:
+```md
+---
+title: "Your Article Title"
+description: "One sentence summary shown on the articles listing page."
+date: "2024-03-15"
+slug: "your-article-url-slug"
+---
 
-```text
-├── public/
+Write your article here in Markdown.
+
+## A Heading
+
+Normal paragraph text. Add as many sections as you like.
+
+## Code Example
+
+    ```js
+    const hello = "world";
+    ```
+```
+
+That's it. The article will appear automatically on `/articles` sorted by date, and will be readable at `/articles/your-article-url-slug`.
+
+---
+
+## Updating Your Info
+
+| What                  | File                              |
+|-----------------------|-----------------------------------|
+| Name, subtitle, links | `src/pages/index.astro`           |
+| Portfolio URL         | `src/pages/index.astro` (hero btn)|
+| Timeline entries      | `src/pages/journey.astro`         |
+| Social links          | `src/pages/contact.astro`         |
+| Email address         | `src/pages/contact.astro`         |
+| Global styles/colors  | `src/styles/global.css`           |
+
+---
+
+## Project Structure
+
+```
+faahim-blog/
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── content/
+│   │   └── articles/        ← your .md articles go here
+│   ├── layouts/
+│   │   └── BaseLayout.astro ← nav, footer, <head> shared across all pages
+│   ├── pages/
+│   │   ├── index.astro      ← home (hero)
+│   │   ├── journey.astro    ← timeline
+│   │   ├── contact.astro    ← contact + social links
+│   │   └── articles/
+│   │       ├── index.astro  ← article listing (auto-generated)
+│   │       └── [slug].astro ← individual article pages (auto-generated)
+│   └── styles/
+│       └── global.css       ← all CSS
+└── public/
+    └── favicon.svg
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
