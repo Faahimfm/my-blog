@@ -27,6 +27,10 @@ const currentPath = Astro.url.pathname;
 </head>
 <body>
 
+  <!-- BACKGROUND LAYERS -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-dots" aria-hidden="true"></div>
+
   <!-- NAV -->
   <nav class="topnav" aria-label="Main navigation">
     <a href="/my-blog/" class="logo">Faahim</a>
@@ -52,7 +56,6 @@ const currentPath = Astro.url.pathname;
         </a>
       </li>
     </ul>
-    
   </nav>
 
   <!-- PAGE CONTENT -->
@@ -63,9 +66,5 @@ const currentPath = Astro.url.pathname;
     <p>&copy; {new Date().getFullYear()} Faahim. All rights reserved.</p>
   </footer>
 
-  <!-- BACKGROUND LAYERS -->
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-dots" aria-hidden="true"></div>
- 
 </body>
 </html>
