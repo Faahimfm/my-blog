@@ -214,6 +214,7 @@ h2 {
   padding: calc(var(--nav-height) + 3.5rem) 5% 6rem;
   flex: 1;
   width: 100%;
+  min-height: calc(100vh - 200px);
 }
 .inner-page--wide {
   max-width: 1100px;
@@ -403,7 +404,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 200px);
   padding: calc(var(--nav-height) + 2rem) 5% 4rem;
   flex: 1;
 }
