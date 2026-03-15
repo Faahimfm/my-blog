@@ -600,15 +600,23 @@ footer p {
   background: none;
   border: 1px solid var(--border-color);
   color: var(--text-muted);
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.9rem;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   cursor: pointer;
-  margin-bottom: 2rem;
   transition: all 0.2s ease;
   font-family: inherit;
+  white-space: nowrap;
 }
 .share-btn:hover {
   color: var(--text-main);
   border-color: var(--text-main);
+}
+
+/* ── ARTICLE META ROW ── */
+.article-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
