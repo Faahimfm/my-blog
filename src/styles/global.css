@@ -600,7 +600,7 @@ footer p {
 .article-share {
   display: flex;
   justify-content: flex-end;
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
 }
@@ -608,22 +608,27 @@ footer p {
 .share-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background: none;
-  border: 1px solid var(--border-color);
-  color: var(--text-muted);
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  gap: 0.6rem;
+  background: var(--text-main);
+  border: none;
+  color: var(--bg-color);
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: inherit;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 .share-btn:hover {
-  color: var(--text-main);
-  border-color: var(--text-main);
-  background: var(--card-bg);
-  transform: translateY(-1px);
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(128,128,128,0.25);
+}
+.share-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
 }
