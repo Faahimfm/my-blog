@@ -617,17 +617,14 @@ footer p {
   letter-spacing: 0.04em;
   font-family: inherit;
 
-  color: #fff; /* brighter text for dark theme */
-
-  background: rgba(255,255,255,0.05); /* dark translucent background */
-  border: 1px solid rgba(255,255,255,0.2); /* visible border */
-
+  color: #fff; /* bright for dark theme */
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 999px;
   backdrop-filter: blur(8px);
 
   cursor: pointer;
-
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .share-btn:hover {
