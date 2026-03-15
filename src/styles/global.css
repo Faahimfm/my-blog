@@ -617,42 +617,23 @@ footer p {
   letter-spacing: 0.04em;
   font-family: inherit;
 
-  color: var(--text-main);
+  color: #fff; /* brighter text for dark theme */
 
-  background: linear-gradient(
-    145deg,
-    rgba(255,255,255,0.06),
-    rgba(255,255,255,0.02)
-  );
+  background: rgba(255,255,255,0.05); /* dark translucent background */
+  border: 1px solid rgba(255,255,255,0.2); /* visible border */
 
-  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 999px;
-
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
 
   cursor: pointer;
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .share-btn:hover {
-  transform: translateY(-3px) scale(1.03);
-
-  border-color: rgba(255,255,255,0.18);
-
-  box-shadow:
-    0 8px 24px rgba(0,0,0,0.45),
-    0 0 12px rgba(255,255,255,0.05);
-
-  background: linear-gradient(
-    145deg,
-    rgba(255,255,255,0.10),
-    rgba(255,255,255,0.04)
-  );
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(255,255,255,0.15), 0 0 12px rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.08);
 }
 
 .share-btn:active {
