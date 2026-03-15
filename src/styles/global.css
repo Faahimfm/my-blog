@@ -598,49 +598,41 @@ footer p {
 }
 /* ── SHARE BUTTON ── */
 .article-share {
-  display: flex;
-  justify-content: flex-end;
+  display: flex !important;
+  justify-content: flex-end !important;
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
+  width: 100%;
 }
 
 .share-btn {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   gap: 0.6rem;
-
   padding: 0.7rem 1.5rem;
-
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   font-family: inherit;
-
-  color: #fff; /* bright for dark theme */
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--text-main) !important;
+  background: transparent !important;
+  border: 1px solid var(--border-color);
   border-radius: 999px;
-  backdrop-filter: blur(8px);
-
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
-
 .share-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 24px rgba(255,255,255,0.15), 0 0 12px rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
+  border-color: var(--text-main);
+  background: var(--card-bg) !important;
 }
-
 .share-btn:active {
   transform: translateY(-1px) scale(0.98);
 }
-
 .share-btn svg {
   width: 14px;
   height: 14px;
   fill: currentColor;
   flex-shrink: 0;
-  opacity: 0.9;
 }
