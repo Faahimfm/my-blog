@@ -26,9 +26,18 @@ function formatDate(dateStr: string) {
       ← Back to Articles
     </a>
     <p class="article-meta">{formatDate(date)}</p>
+    <button class="share-btn" id="share-btn">Copy link</button>
     <h1>{title}</h1>
     <div class="article-body">
       <Content />
     </div>
   </main>
+  <script>
+  const btn = document.getElementById('share-btn');
+  btn?.addEventListener('click', () => {
+    navigator.clipboard.writeText(window.location.href);
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy link', 2000);
+  });
+</script>
 </BaseLayout>
