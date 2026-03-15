@@ -52,4 +52,38 @@ function formatDate(dateStr: string) {
       }
     });
   </script>
+  <style>
+  .article-share {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .share-btn:hover {
+    border-color: #ffffff;
+    transform: translateY(-2px);
+  }
+  .share-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+  }
+</style>
 </BaseLayout>
