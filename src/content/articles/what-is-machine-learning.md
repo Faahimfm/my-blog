@@ -133,9 +133,9 @@ Machine Learning **is**:
 
 Machine Learning is **not**:
 
-- ❌ Thinking
-- ❌ Understanding
-- ❌ Intelligence (in the human sense)
+- ❌ Thinking\
+- ❌ Understanding\
+- ❌ Intelligence (in the human sense)\
 
 ![Myth vs Reality](/my-blog/images/visual5_myth_vs_reality.png)
 
