@@ -1,5 +1,2 @@
 import { defineConfig } from 'astro/config';
-
-export default defineConfig({
-  // site: 'https://faahim.dev',
-});
+export default defineConfig({});

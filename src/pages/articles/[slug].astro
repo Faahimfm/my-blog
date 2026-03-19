@@ -12,10 +12,7 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { title, description, date } = article.frontmatter;
-
-// compiledContent() gives raw HTML — images render as plain <img src="...">
-// which correctly resolves paths from /public
-const htmlContent = article.compiledContent();
+const Content = article.Content;
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-US', {
@@ -31,6 +28,8 @@ function formatDate(dateStr: string) {
     </a>
     <p class="article-meta">{formatDate(date)}</p>
     <h1>{title}</h1>
-    <div class="article-body" set:html={htmlContent} />
+    <div class="article-body">
+      <Content />
+    </div>
   </main>
 </BaseLayout>
