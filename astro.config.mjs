@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://Faahimfm.io',
+  site: 'https://Faahimfm.github.io',
   base: '/my-blog',
 });
