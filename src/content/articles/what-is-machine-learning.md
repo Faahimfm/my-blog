@@ -16,7 +16,7 @@ Yeah, I know. That already sounds like a scam. Someone somewhere said "Machine L
 Relax.
 
 <figure>
-  <img src="/images/visual1_expectation_vs_reality.png" alt="Expectation vs Reality" width="800" height="450" />
+  <img src="/my-blog/images/visual1_expectation_vs_reality.png" alt="Expectation vs Reality" width="800" height="450" />
   <figcaption>Figure 1: What people think vs what it actually is</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Then when you show a new image, it guesses:
 Important word: **guesses**. Not understands. Not knows. Just guesses — based on patterns it has seen before.
 
 <figure>
-  <img src="/images/visual2_pattern_recognition.png" alt="Pattern Recognition" width="800" height="450" />
+  <img src="/my-blog/images/visual2_pattern_recognition.png" alt="Pattern Recognition" width="800" height="450" />
   <figcaption>Figure 2: Pattern recognition in action — no understanding, just matching</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ It's just comparing pixels and saying:
 Because humans suck at scale.
 
 <figure>
-  <img src="/images/visual3_human_vs_machine.png" alt="Human vs Machine" width="800" height="450" />
+  <img src="/my-blog/images/visual3_human_vs_machine.png" alt="Human vs Machine" width="800" height="450" />
   <figcaption>Figure 3: Humans vs Machines when handling massive data</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ That's it. Prediction → error → adjust → repeat.
 Over and over. Like a student who keeps failing but slightly improves each time. (Some students never improve. Machines usually do.)
 
 <figure>
-  <img src="/images/visual4_learning_loop.png" alt="Learning Loop" width="800" height="450" />
+  <img src="/my-blog/images/visual4_learning_loop.png" alt="Learning Loop" width="800" height="450" />
   <figcaption>Figure 4: The ML learning loop — Prediction → Error → Adjust → Repeat</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ Machine Learning is **not**:
 - ❌ Intelligence (in the human sense)
 
 <figure>
-  <img src="/images/visual5_myth_vs_reality.png" alt="Myth vs Reality" width="800" height="450" />
+  <img src="/my-blog/images/visual5_myth_vs_reality.png" alt="Myth vs Reality" width="800" height="450" />
   <figcaption>Figure 5: Myth vs Reality — ML is just patterns, not intelligence</figcaption>
 </figure>
 
