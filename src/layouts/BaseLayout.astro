@@ -25,13 +25,13 @@ const currentPath = Astro.url.pathname;
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/my-blog/styles/global.css" />
 </head>
-<body class="page-enter">
+<body>
 
   <!-- BACKGROUND LAYERS -->
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-dots" aria-hidden="true"></div>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <nav class="topnav" aria-label="Main navigation">
     <a href="/my-blog/" class="logo">Faahim</a>
     <ul class="nav-links" role="list">
@@ -59,13 +59,11 @@ const currentPath = Astro.url.pathname;
   </nav>
 
   <!-- PAGE CONTENT -->
-  <main class="inner-page">
-    <slot />
-  </main>
+  <slot />
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; {new Date().getFullYear()} Faahim. All rights reserved.</p>
+    <span>&copy; {new Date().getFullYear()} Faahim. All rights reserved.</span>
   </footer>
 
 </body>
