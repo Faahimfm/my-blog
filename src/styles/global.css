@@ -467,6 +467,18 @@ h2 {
   line-height: 1.1;
 }
 .article-body { color: var(--text-muted); font-size: 1.05rem; line-height: 1.9; }
+.article-body img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+.article-body p:has(> img:only-child) {
+  margin-bottom: 0.4rem;
+}
 .article-body h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text-main); border: none; padding: 0; }
 .article-body h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; color: var(--text-main); }
 .article-body p { margin-bottom: 1.4rem; color: var(--text-muted); }
