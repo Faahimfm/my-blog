@@ -60,7 +60,8 @@ const currentPath = Astro.url.pathname;
 
   <!-- PAGE CONTENT -->
   <main class="article-page">
-    <div class="article-body">
+    <!-- Wrap Markdown content in container to apply CSS -->
+    <div class="article-body markdown-body">
       <slot />
     </div>
   </main>

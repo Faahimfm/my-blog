@@ -15,14 +15,8 @@ Yeah, I know. That already sounds like a scam. Someone somewhere said "Machine L
 
 Relax.
 
-<div class="image-wrapper">
-  <img src="/my-blog/images/visual1_expectation_vs_reality.png" alt="Expectation vs Reality" />
-</div>
+![Expectation vs Reality](/my-blog/images/visual1_expectation_vs_reality.png)
 *Figure 1: What people think vs what it actually is*
-
-There's no classroom. No thinking. No understanding. No "aha" moment.
-
----
 
 ## So what *is* Machine Learning then?
 
@@ -32,32 +26,8 @@ At its core, Machine Learning (ML) is just this:
 
 That's it. No magic. No intelligence. Just patterns.
 
----
-
-## Let's make it painfully simple
-
-Imagine you show a machine thousands of pictures — dogs 🐶 and cats 🐱. You don't explain what a dog *is*. You don't say "it barks" or "it has four legs." You just dump images and say:
-
-> "Figure it out."
-
-After seeing enough examples, the machine starts noticing patterns:
-
-- "This shape appears often in dogs"
-- "These ears usually mean cat"
-- "This texture… suspiciously fluffy"
-
-Then when you show a new image, it guesses:
-
-> "Yeah… looks like a dog."
-
-Important word: **guesses**. Not understands. Not knows. Just guesses — based on patterns it has seen before.
-
-<div class="image-wrapper">
-  <img src="/my-blog/images/visual2_pattern_recognition.png" alt="Pattern Recognition" />
-</div>
+![Pattern Recognition](/my-blog/images/visual2_pattern_recognition.png)
 *Figure 2: Pattern recognition in action — no understanding, just matching*
-
----
 
 ## 🤡 The biggest misunderstanding
 
@@ -75,53 +45,29 @@ It's just comparing pixels and saying:
 
 > "This looks similar to stuff I've seen before."
 
----
+![Human vs Machine](/my-blog/images/visual3_human_vs_machine.png)
+*Figure 3: Humans vs Machines when handling massive data*
 
 ## 🧠 Then why is it so powerful?
 
-<div class="image-wrapper">
-  <img src="/my-blog/images/visual3_human_vs_machine.png" alt="Human vs Machine" />
-</div>
-*Figure 3: Humans vs Machines when handling massive data*
+Because humans suck at scale.
 
-You can look at:
-
-- 10 images → fine
-- 100 images → tired
-- 10,000 images → brain shutdown
-
-A machine? Doesn't get tired. Doesn't complain. Doesn't need coffee. Give it millions of examples, and it becomes very good at being **less wrong**. Not perfect. Just less wrong.
-
----
-
-<div class="image-wrapper">
-  <img src="/my-blog/images/visual4_learning_loop.png" alt="Learning Loop" />
-</div>
+![Learning Loop](/my-blog/images/visual4_learning_loop.png)
 *Figure 4: The ML learning loop — Prediction → Error → Adjust → Repeat*
 
----
+## 🧠 Final Reality Check
 
-## ⚙️ So what's actually happening behind the scenes?
+Machine Learning **is**:
 
-Very simplified:
+- ✔ Pattern finding
+- ✔ Guessing based on past data
+- ✔ Improving by reducing errors
 
-1. You give data
-2. The machine makes a guess
-3. It checks how wrong it was
-4. It adjusts some internal numbers
-5. Tries again
+Machine Learning is **not**:
 
-That's the "learning." No brain cells were involved.
+- ❌ Thinking
+- ❌ Understanding
+- ❌ Intelligence (in the human sense)
 
----
-
-<div class="image-wrapper">
-  <img src="/my-blog/images/visual5_myth_vs_reality.png" alt="Myth vs Reality" />
-</div>
+![Myth vs Reality](/my-blog/images/visual5_myth_vs_reality.png)
 *Figure 5: Myth vs Reality — ML is just patterns, not intelligence*
-
----
-
-## 🧾 One-line summary
-
-> **Machine Learning is just finding patterns in data and getting slightly less wrong over time.**
