@@ -448,10 +448,12 @@ h2 {
 /* ── ARTICLE READING PAGE ── */
 .article-page {
   max-width: 700px;
-  margin: 0 auto;
-  padding: calc(var(--nav-height) + 3rem) 5% 6rem;
-  flex: 1;
   width: 100%;
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 3rem) 1.5rem 6rem;
+  flex: 1;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .article-page .article-meta {
   font-size: 0.8rem;
@@ -515,14 +517,19 @@ h2 {
 .article-body figure {
   margin: 2.5rem 0;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .article-body figure img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
   border: 1px solid var(--border-color);
   margin-bottom: 0.75rem;
+  box-sizing: border-box;
+  object-fit: contain;
 }
 
 .article-body figcaption { text-align: center; font-size: 0.82rem; color: var(--text-muted); opacity: 0.75; font-style: italic; }
