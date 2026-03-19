@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { title, description, date } = article.frontmatter;
-const rawHtml = article.compiledContent();
+const Content = article.Content;
 
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', {
@@ -25,6 +25,8 @@ function formatDate(dateStr) {
     <a href="/my-blog/articles" class="article-back">← Back to Articles</a>
     <p class="article-meta">{formatDate(date)}</p>
     <h1>{title}</h1>
-    <div class="article-body" set:html={rawHtml} />
+    <div class="article-body">
+      <Content />
+    </div>
   </main>
 </BaseLayout>

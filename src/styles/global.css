@@ -477,11 +477,13 @@ h2 {
 
 .article-body img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
   border: 1px solid var(--border-color);
   margin: 2rem 0 0.5rem;
+  box-sizing: border-box;
 }
 .article-body p:has(> img:only-child) {
   margin-bottom: 0.4rem;

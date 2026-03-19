@@ -15,8 +15,9 @@ Yeah, I know. That already sounds like a scam. Someone somewhere said "Machine L
 
 Relax.
 
-<img src="/my-blog/images/visual1_expectation_vs_reality.png" alt="Expectation vs Reality" />
-<p><em>Figure 1: What people think vs what it actually is</em></p>
+![Expectation vs Reality](/my-blog/images/visual1_expectation_vs_reality.png)
+
+*Figure 1: What people think vs what it actually is*
 
 There's no classroom. No thinking. No understanding. No "aha" moment.
 
@@ -50,10 +51,9 @@ Then when you show a new image, it guesses:
 
 Important word: **guesses**. Not understands. Not knows. Just guesses — based on patterns it has seen before.
 
+![Pattern Recognition](/my-blog/images/visual2_pattern_recognition.png)
 
-  <img src="/my-blog/images/visual2_pattern_recognition.png" alt="Pattern Recognition"  />
-  <p><em>Figure 2: Pattern recognition in action — no understanding, just matching</em></p>
-
+*Figure 2: Pattern recognition in action — no understanding, just matching*
 
 ---
 
@@ -79,10 +79,9 @@ It's just comparing pixels and saying:
 
 Because humans suck at scale.
 
+![Human vs Machine](/my-blog/images/visual3_human_vs_machine.png)
 
-  <img src="/my-blog/images/visual3_human_vs_machine.png" alt="Human vs Machine"  />
-  <p><em>Figure 3: Humans vs Machines when handling massive data</em></p>
-
+*Figure 3: Humans vs Machines when handling massive data*
 
 You can look at:
 
@@ -104,10 +103,9 @@ That's it. Prediction → error → adjust → repeat.
 
 Over and over. Like a student who keeps failing but slightly improves each time. (Some students never improve. Machines usually do.)
 
+![Learning Loop](/my-blog/images/visual4_learning_loop.png)
 
-  <img src="/my-blog/images/visual4_learning_loop.png" alt="Learning Loop" />
-  <p><em>Figure 4: The ML learning loop — Prediction → Error → Adjust → Repeat</em></p>
-
+*Figure 4: The ML learning loop — Prediction → Error → Adjust → Repeat*
 
 ---
 
@@ -139,10 +137,9 @@ Machine Learning is **not**:
 - ❌ Understanding
 - ❌ Intelligence (in the human sense)
 
+![Myth vs Reality](/my-blog/images/visual5_myth_vs_reality.png)
 
-  <img src="/my-blog/images/visual5_myth_vs_reality.png" alt="Myth vs Reality"/>
-  <p><em>Figure 5: Myth vs Reality — ML is just patterns, not intelligence</em></p>
-
+*Figure 5: Myth vs Reality — ML is just patterns, not intelligence*
 
 ---
 
