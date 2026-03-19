@@ -450,10 +450,9 @@ h2 {
   max-width: 680px;
   width: 100%;
   margin: 0 auto;
-  padding: calc(var(--nav-height) + 3rem) 2rem 6rem;
+  padding: calc(var(--nav-height) + 3rem) 24px 6rem;
   flex: 1;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .article-body {
@@ -461,7 +460,6 @@ h2 {
   font-size: 1.05rem;
   line-height: 1.9;
   width: 100%;
-  overflow: hidden;
 }
 .article-page .article-meta {
   font-size: 0.8rem;
@@ -479,13 +477,11 @@ h2 {
 
 .article-body img {
   width: 100%;
-  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
   border: 1px solid var(--border-color);
-  box-sizing: border-box;
-  margin: 2rem 0;
+  margin: 2rem 0 0.5rem;
 }
 .article-body p:has(> img:only-child) {
   margin-bottom: 0.4rem;
