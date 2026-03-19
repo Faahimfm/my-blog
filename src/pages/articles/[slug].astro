@@ -61,4 +61,19 @@ function formatDate(dateStr) {
     text-align: center;
     margin-bottom: 2rem;
   }
+
+  /* Paragraph spacing — no unwanted gaps between consecutive lines */
+  .article-body p {
+    margin-bottom: 1.4rem;
+    line-height: 1.9;
+  }
+
+  /* Two consecutive paragraphs with no blank line between them in md
+     still get separated by margin — this is correct browser behaviour.
+     The fix: use a <br> in md for a soft line break with no gap. */
+  .article-body br {
+    display: block;
+    content: "";
+    margin: 0;
+  }
 </style>
