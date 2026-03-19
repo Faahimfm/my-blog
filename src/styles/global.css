@@ -512,6 +512,9 @@ h2 {
   transition: color 0.2s ease;
 }
 .article-back:hover { color: var(--text-main); }
+.article-body figure { margin: 2.5rem 0; }
+.article-body figure img { margin-bottom: 0.75rem; border-radius: 10px; border: 1px solid var(--border-color); width: 100%; height: auto; display: block; }
+.article-body figcaption { text-align: center; font-size: 0.82rem; color: var(--text-muted); opacity: 0.75; font-style: italic; }
 
 /* ── FOOTER ── */
 footer {

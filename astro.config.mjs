@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  experimental: {
-    assets: false,
-  },
+  // site: 'https://faahim.dev',
 });

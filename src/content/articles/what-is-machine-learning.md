@@ -15,8 +15,10 @@ Yeah, I know. That already sounds like a scam. Someone somewhere said "Machine L
 
 Relax.
 
-<img src="/images/visual1_expectation_vs_reality.png" alt="Expectation vs Reality" />
-<em>Figure 1: What people think vs what it actually is</em>
+<figure>
+  <img src="/images/visual1_expectation_vs_reality.png" alt="Expectation vs Reality" width="800" height="450" />
+  <figcaption>Figure 1: What people think vs what it actually is</figcaption>
+</figure>
 
 There's no classroom. No thinking. No understanding. No "aha" moment.
 
@@ -50,8 +52,10 @@ Then when you show a new image, it guesses:
 
 Important word: **guesses**. Not understands. Not knows. Just guesses — based on patterns it has seen before.
 
-<img src="/images/visual2_pattern_recognition.png" alt="Pattern Recognition" />
-<em>Figure 2: Pattern recognition in action — no understanding, just matching</em>
+<figure>
+  <img src="/images/visual2_pattern_recognition.png" alt="Pattern Recognition" width="800" height="450" />
+  <figcaption>Figure 2: Pattern recognition in action — no understanding, just matching</figcaption>
+</figure>
 
 ---
 
@@ -77,8 +81,10 @@ It's just comparing pixels and saying:
 
 Because humans suck at scale.
 
-<img src="/images/visual3_human_vs_machine.png" alt="Human vs Machine" />
-<em>Figure 3: Humans vs Machines when handling massive data</em>
+<figure>
+  <img src="/images/visual3_human_vs_machine.png" alt="Human vs Machine" width="800" height="450" />
+  <figcaption>Figure 3: Humans vs Machines when handling massive data</figcaption>
+</figure>
 
 You can look at:
 
@@ -100,8 +106,10 @@ That's it. Prediction → error → adjust → repeat.
 
 Over and over. Like a student who keeps failing but slightly improves each time. (Some students never improve. Machines usually do.)
 
-<img src="/images/visual4_learning_loop.png" alt="Learning Loop" />
-<em>Figure 4: The ML learning loop — Prediction → Error → Adjust → Repeat</em>
+<figure>
+  <img src="/images/visual4_learning_loop.png" alt="Learning Loop" width="800" height="450" />
+  <figcaption>Figure 4: The ML learning loop — Prediction → Error → Adjust → Repeat</figcaption>
+</figure>
 
 ---
 
@@ -133,8 +141,10 @@ Machine Learning is **not**:
 - ❌ Understanding
 - ❌ Intelligence (in the human sense)
 
-<img src="/images/visual5_myth_vs_reality.png" alt="Myth vs Reality" />
-<em>Figure 5: Myth vs Reality — ML is just patterns, not intelligence</em>
+<figure>
+  <img src="/images/visual5_myth_vs_reality.png" alt="Myth vs Reality" width="800" height="450" />
+  <figcaption>Figure 5: Myth vs Reality — ML is just patterns, not intelligence</figcaption>
+</figure>
 
 ---
 
