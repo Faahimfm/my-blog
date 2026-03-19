@@ -30,3 +30,35 @@ function formatDate(dateStr) {
     </div>
   </main>
 </BaseLayout>
+
+<style is:global>
+  .article-body img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box !important;
+    margin: 2rem 0 0.5rem;
+  }
+
+  .article-body p:has(> img) {
+    margin: 2rem 0 0.5rem !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: block !important;
+  }
+
+  .article-body p:has(> img) + p > em:only-child {
+    display: block;
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+    color: var(--text-muted);
+    opacity: 0.75;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+</style>
