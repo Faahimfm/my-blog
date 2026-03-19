@@ -3,6 +3,7 @@ title: "The Beauty of Minimalism in Code"
 description: "Exploring why less is often more when it comes to software architecture, web design, and maintaining a healthy codebase over time."
 date: "2023-10-24"
 slug: "minimalism-in-code"
+tags: ["Software Engineering", "Clean Code"]
 ---
 
 Good software is not about how much you can add — it is about how much you can leave out while still solving the problem completely.

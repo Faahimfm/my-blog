@@ -3,6 +3,7 @@ title: "Designing for Dark Mode"
 description: "Tips and tricks for creating comfortable, accessible dark themes for your applications that reduce eye strain and look great."
 date: "2023-08-05"
 slug: "designing-for-dark-mode"
+tags: ["CSS", "Design", "Accessibility"]
 ---
 
 Dark mode is not just a visual preference. For many people — especially those who work long hours in front of screens — it is a genuine comfort and accessibility need.
