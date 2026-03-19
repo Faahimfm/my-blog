@@ -1,7 +1,4 @@
 ---
-// src/layouts/BaseLayout.astro
-import '../styles/global.css';
-
 interface Props {
   title?: string;
   description?: string;
@@ -22,34 +19,39 @@ const currentPath = Astro.url.pathname;
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <title>{title}</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/my-blog/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/my-blog/styles/global.css" />
 </head>
 <body>
 
+  <!-- BACKGROUND LAYERS -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-dots" aria-hidden="true"></div>
+
   <!-- NAV -->
   <nav class="topnav" aria-label="Main navigation">
-    <a href="/" class="logo">Faahim</a>
+    <a href="/my-blog/" class="logo">Faahim</a>
     <ul class="nav-links" role="list">
       <li>
-        <a href="/" class="nav-link" aria-current={currentPath === "/" ? "page" : undefined}>
+        <a href="/my-blog/" class="nav-link" aria-current={currentPath === "/my-blog/" ? "page" : undefined}>
           Home
         </a>
       </li>
       <li>
-        <a href="/articles" class="nav-link" aria-current={currentPath.startsWith("/articles") ? "page" : undefined}>
+        <a href="/my-blog/articles" class="nav-link" aria-current={currentPath.startsWith("/my-blog/articles") ? "page" : undefined}>
           Articles
         </a>
       </li>
       <li>
-        <a href="/journey" class="nav-link" aria-current={currentPath === "/journey" ? "page" : undefined}>
+        <a href="/my-blog/journey" class="nav-link" aria-current={currentPath === "/my-blog/journey" ? "page" : undefined}>
           Journey
         </a>
       </li>
       <li>
-        <a href="/contact" class="nav-link" aria-current={currentPath === "/contact" ? "page" : undefined}>
+        <a href="/my-blog/contact" class="nav-link" aria-current={currentPath === "/my-blog/contact" ? "page" : undefined}>
           Contact
         </a>
       </li>
@@ -61,12 +63,8 @@ const currentPath = Astro.url.pathname;
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; {new Date().getFullYear()} Faahim. All rights reserved.</p>
+    <span>&copy; {new Date().getFullYear()} Faahim. All rights reserved.</span>
   </footer>
-
-  <!-- BACKGROUND LAYERS -->
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-dots" aria-hidden="true"></div>
 
 </body>
 </html>
