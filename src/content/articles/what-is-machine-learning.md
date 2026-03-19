@@ -3,6 +3,7 @@ title: "What is Machine Learning? A Beginner's Guide"
 description: "Machines are not learning. No classroom, no thinking, no understanding. Just patterns, guesses, and getting slightly less wrong over time."
 date: "2026-03-19"
 slug: "what-is-machine-learning"
+layout: "../layouts/BaseLayout.astro"
 ---
 
 *"So You Think Machines Are Learning? Calm Down, It's Just Math Acting Smart"*
