@@ -1,6 +1,5 @@
 /* ─────────────────────────────────────────
    src/styles/global.css
-   All site-wide styles. Import in BaseLayout.
 ───────────────────────────────────────── */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -454,13 +453,6 @@ h2 {
   flex: 1;
   box-sizing: border-box;
 }
-
-.article-body {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  line-height: 1.9;
-  width: 100%;
-}
 .article-page .article-meta {
   font-size: 0.8rem;
   color: var(--text-muted);
@@ -475,6 +467,32 @@ h2 {
   line-height: 1.1;
 }
 
+/* ── ARTICLE BODY ── */
+.article-body {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  width: 100%;
+  box-sizing: border-box;
+}
+.article-body h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text-main); border: none; padding: 0; }
+.article-body h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; color: var(--text-main); }
+.article-body p { margin-bottom: 1.4rem; color: var(--text-muted); }
+.article-body a { color: var(--text-main); }
+.article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
+.article-body li { margin-bottom: 0.4rem; }
+
+/* ── IMAGES in articles ── */
+/* paragraph wrapping an image — reset it */
+.article-body p:has(> img) {
+  margin: 2rem 0 0.5rem;
+  line-height: 0;
+  font-size: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* the image itself */
+.article-body p > img,
 .article-body img {
   width: 100%;
   max-width: 100%;
@@ -482,16 +500,21 @@ h2 {
   display: block;
   border-radius: 10px;
   border: 1px solid var(--border-color);
-  margin: 2rem 0 0.5rem;
   box-sizing: border-box;
 }
-.article-body p:has(> img:only-child) {
-  margin-bottom: 0.4rem;
+/* italic caption line after image paragraph */
+.article-body p:has(> img) + p > em:only-child {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  opacity: 0.75;
+  text-align: center;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
 }
-.article-body h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--text-main); border: none; padding: 0; }
-.article-body h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; color: var(--text-main); }
-.article-body p { margin-bottom: 1.4rem; color: var(--text-muted); }
-.article-body a { color: var(--text-main); }
+
+/* ── CODE ── */
 .article-body code {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -508,8 +531,7 @@ h2 {
   margin: 1.5rem 0;
 }
 .article-body pre code { background: none; border: none; padding: 0; font-size: 0.9rem; }
-.article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
-.article-body li { margin-bottom: 0.4rem; }
+
 .article-back {
   display: inline-flex;
   align-items: center;
@@ -521,25 +543,6 @@ h2 {
   transition: color 0.2s ease;
 }
 .article-back:hover { color: var(--text-main); }
-.article-body figure {
-  margin: 2.5rem 0;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.article-body figure img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
-  margin-bottom: 0.75rem;
-  box-sizing: border-box;
-  object-fit: contain;
-}
-
-.article-body figcaption { text-align: center; font-size: 0.82rem; color: var(--text-muted); opacity: 0.75; font-style: italic; }
 
 /* ── FOOTER ── */
 footer {
@@ -549,15 +552,12 @@ footer {
   border-top: 1px solid var(--border-color);
   color: var(--text-muted);
   font-size: 0.82rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
   transition: border-color 0.4s ease;
 }
-
 footer p {
   margin: 0;
   text-align: center;
@@ -572,62 +572,46 @@ footer p {
 @media (max-width: 768px) {
   h1 { font-size: 2.6rem; letter-spacing: -1px; }
   h2 { font-size: 1.6rem; }
-
   .topnav { padding: 0.75rem 4%; }
   .nav-links { gap: 1rem; }
   .nav-link { font-size: 0.88rem; padding: 0.4rem 0; }
   .logo { font-size: 1.3rem; }
-
   .inner-page { padding: calc(var(--nav-height) + 2rem) 4% 4rem; }
-
   .hero { padding: calc(var(--nav-height) + 1rem) 4% 3rem; }
   .hero-subtitle { font-size: 1rem; }
   .hero-btns { flex-direction: column; gap: 0.8rem; }
   .btn-hero { width: 100%; max-width: 320px; }
-
   .blog-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .card { padding: 1.5rem; }
-
   .timeline { padding-left: 1.8rem; }
   .timeline-title { font-size: 1.05rem; }
   .timeline-desc { font-size: 0.9rem; }
-
-  .article-page { padding: calc(var(--nav-height) + 2rem) 4% 4rem; }
+  .article-page { padding: calc(var(--nav-height) + 2rem) 20px 4rem; }
   .article-page h1 { font-size: 2.2rem; letter-spacing: -1px; }
-
   .contact-page { padding: calc(var(--nav-height) + 2rem) 4% 3rem; }
   .contact-subtitle { font-size: 0.95rem; }
-
   footer { padding: 1.5rem 4%; }
 }
 
 @media (max-width: 480px) {
   h1 { font-size: 1.8rem; letter-spacing: -0.5px; }
   h2 { font-size: 1.4rem; }
-
   .topnav { padding: 0.75rem 1rem; }
   .logo { font-size: 1.2rem; }
   .nav-links { gap: 0.6rem; width: 100%; justify-content: center; }
   .nav-link { font-size: 0.8rem; padding: 0.3rem 0.4rem; }
-
   .hero { min-height: 90vh; padding: calc(var(--nav-height) + 0.5rem) 1rem 2rem; }
   .hero-subtitle { font-size: 0.95rem; }
-
   .inner-page { padding: calc(var(--nav-height) + 1.5rem) 1rem 3rem; }
-
   .card { padding: 1.25rem; }
   .card h3 { font-size: 1.05rem; }
-
   .timeline { padding-left: 1.4rem; }
   .timeline-item::before { left: -2rem; }
-
-  .article-page { padding: calc(var(--nav-height) + 1.5rem) 1rem 3rem; }
+  .article-page { padding: calc(var(--nav-height) + 1.5rem) 16px 3rem; }
   .article-page h1 { font-size: 1.8rem; }
   .article-body { font-size: 0.97rem; }
-
   .social-links { gap: 1rem; }
   .social-btn { width: 48px; height: 48px; }
-
   footer { padding: 1.25rem 1rem; font-size: 0.78rem; }
 }
 
